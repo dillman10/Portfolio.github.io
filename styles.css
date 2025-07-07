@@ -1,0 +1,154 @@
+/* Colors
+Black
+Dark Green: #3A4E48
+Lighter Green: #3A4E48
+Light Green: #8B9D83
+Beige: #BEB0A7 
+*/
+
+
+*{
+   box-sizing: border-box; 
+}
+body{
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    background-color: hwb(20 79% 12%);
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 15vh;
+    min-height: 100px;
+    background-color: #8B9D83;
+}
+.header h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    margin: .5vh 0 0 0;
+    color: white;
+    text-shadow: 0 0 10px #3A4E48;
+}
+.header p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    color: white;
+    text-shadow: 0 0 10px hsl(158, 12%, 17%);
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 150px;
+    padding-top: 1vh;
+}
+.left button{
+    font-size: clamp(1.5rem, 2vw + 1vh, 5rem);
+    aspect-ratio: 4/1;
+    background-color: hsl(162, 15%, 37%);
+    color: white;
+    border-radius: 5px;
+    margin: 0.4vh;
+    border: none;
+    box-shadow: 0 0 10px hsl(162, 15%, 6%,  0.75);
+    transition: background-color .2s ease;
+}
+.left button.active{
+    background-color: hsl(162, 15%, 26%);
+}
+.left button.hover{
+    background-color: hsl(162, 15%, 32%);
+}
+.image-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-wrapper img {
+    margin-top: 2vh;
+    width: 50vw;
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 20px black;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    height: 85vh;
+    flex: 5;
+    overflow: auto;
+}
+.right div {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  font-size: 1.5em;
+}
+#aboutMeRight{
+    display: flex;
+    flex-direction: column;
+}
+#projectsRight, #contactRight{
+    display: none;
+    flex-direction: column;
+}
+.rightTitle{
+    font-size: 1.5em;
+    text-decoration: underline;
+    text-align: center;
+    text-shadow: 0 0 10px hsl(102, 28%, 62%, 0.5);
+}
+#resumeRight{
+    display: none;
+    align-items: center;
+    flex-direction: column;
+}
+.resumePhoto img{
+    box-shadow: 0 0 10px hsl(0, 0%, 0%, 0.5);
+}
+#projectContent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+.projectDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    aspect-ratio: 3/2;
+    min-width: 200px;
+    max-width: 500px;
+    border: 3px ridge;
+    border-radius: 10px;
+    background-color: hsl(102, 12%, 56%);
+    box-shadow: 0 0 10px hsl(0, 0%, 0%, 0.5);
+    transition: background-color 0.3s ease;
+}
+.projectDiv.hover{
+    background-color: hsl(102, 12%, 46%);
+}
+.projectDiv img{
+    height: 60%;
+    width: auto;
+    margin: 5px;
+}
+.projectDiv p{
+    font-size: .5em;
+    margin: 0;
+    color: white;
+    text-shadow: 0 0 5px black;
+}
