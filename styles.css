@@ -85,7 +85,7 @@ body{
     border-radius: 20px;
     box-shadow: 0 0 20px black;
     object-fit: contain;
-    display: block;
+    display: block; 
 }
 .right{
     display: flex;
