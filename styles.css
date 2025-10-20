@@ -66,10 +66,10 @@ body{
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.left button.active{
+.left button:active{
     background-color: hsl(162, 15%, 26%);
 }
-.left button.hover{
+.left button:hover{
     background-color: hsl(162, 15%, 32%);
     cursor: pointer;
 }
