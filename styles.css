@@ -71,6 +71,7 @@ body{
 }
 .left button.hover{
     background-color: hsl(162, 15%, 32%);
+    cursor: pointer;
 }
 .image-wrapper{
     display: flex;
