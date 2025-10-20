@@ -66,13 +66,24 @@ body{
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.left button:active{
+.left button.active{
     background-color: hsl(162, 15%, 26%);
 }
 .left button:hover{
     background-color: hsl(162, 15%, 32%);
     cursor: pointer;
 }
+.left img{
+    margin-top: 2vh;
+    width: 80%;
+    border-radius: 25%;
+    border: 3px solid black;
+    box-shadow: 0 0 10px hsl(0, 0%, 0%, 0.5);
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .image-wrapper{
     display: flex;
     justify-content: center;
